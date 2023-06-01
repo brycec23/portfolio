@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* font-family: "Montserrat"; */
+  font-family: monospace, monospace;
+  color: white;
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  /* background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background-repeat: no-repeat; */
+  background-color: #192a19;
+}
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+h1 {
+    margin-bottom: 16px;
+}
+
+/* Container for index.html */
+.container {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: sticky;
+    top:0;
+    padding-top: 40px;
+    align-items: center;
+    width:100%;
+
+    background-color: #192a19;
+}
+header .links {
+    display: inline-block;
+    text-align: right;
+}
+header a {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+}
+header a:hover {
+    border-color: white;
+}
+
+
+.Home, .About, .Projects{
+    min-height: 100vh;
+}
+
+
+.Home {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.Home h1 {
+    font-size: 8em;
+}
+
+.Home p {
+    font-size: 2em;
+}
+
+.Home a {
+    display: inline-block;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+}
+.Home a:hover {
+    border-color: white;
+}
+
+.About {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.About h1 {
+    font-size: 4em;
+}
+
+.About p {
+    font-size: 1.5em;
+}
+
+.AboutLeft {
+    width:45%;
+}
+
+.AboutRight {
+    width:45%;
+}
+
+.lang-logo {
+    padding:10px;
+    background-color:rgb(19, 19, 19);
+    max-width: 60px;
+    border-radius:10px ;
+    margin-right: 5px;
+    height:60px;
+    object-fit: contain;
+}
+
+.Projects {
+    padding-top: 10%;
+    width: 100%;
+}
+
+.Projects h1 {
+    font-size: 4em;
+}
+
+.Projects a {
+    font-size: 2em;
+}
+
+.footer {
+    width:100%;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 3%;
+}
