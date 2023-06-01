@@ -8,7 +8,15 @@ desc: one sentence desc of app
 git: github link
 link: kobalt link if its a thing
 */
-export default function ProjectCard({ name, sub, image, desc, git, link }) {
+export default function ProjectCard({
+  name,
+  sub,
+  image,
+  desc,
+  techUsed,
+  git,
+  link,
+}) {
   return (
     <div className="project-item">
       <img
@@ -23,6 +31,7 @@ export default function ProjectCard({ name, sub, image, desc, git, link }) {
         </div>
         <p>{desc}</p>
         <div className="image-link-container">
+          <p>{techUsed}</p>
           {git && (
             <a href={git} target="_blank">
               <img

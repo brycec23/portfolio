@@ -10,6 +10,7 @@
 }
 html, body {
   min-height: 100%;
+  width: 100%;
 }
 body {
   /* background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
@@ -32,30 +33,60 @@ h1 {
 }
 
 /* Header */
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: sticky;
-    top:0;
-    padding-top: 40px;
-    align-items: center;
-    width:100%;
+@media all and (min-width: 900px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: sticky;
+        top:0;
+        padding-top: 40px;
+        align-items: center;
+        width:100%;
 
-    background-color: #192a19;
+        background-color: #192a19;
+    }
+    header .links {
+        display: inline-block;
+        text-align: right;
+    }
+    header a {
+        display: inline-block;
+        margin-left: 20px;
+        font-weight: 400;
+        padding-bottom: 8px;
+        border-bottom: 3px solid transparent;
+    }
+    header a:hover {
+        border-color: white;
+    }
 }
-header .links {
-    display: inline-block;
-    text-align: right;
-}
-header a {
-    display: inline-block;
-    margin-left: 20px;
-    font-weight: 400;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-header a:hover {
-    border-color: white;
+
+@media all and (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top:0;
+        padding-top: 40px;
+        align-items: center;
+        width:100%;
+
+        background-color: #192a19;
+    }
+    header .links {
+        display: flex;
+        justify-content: space-around;
+        width:80%;
+    }
+    header a {
+        display: inline-block;
+        font-weight: 400;
+        padding-bottom: 8px;
+        border-bottom: 3px solid transparent;
+    }
+    header a:hover {
+        border-color: white;
+    }
 }
 
 
@@ -63,89 +94,175 @@ header a:hover {
     min-height: 100vh;
 }
 
+@media all and (min-width: 900px) {
+    .Home {
+        text-align: center;
+        justify-content: center;
+        padding-top: 10%;
+    }
 
-.Home {
-    text-align: center;
-    justify-content: center;
-    padding-top: 10%;
+    .Home h1 {
+        font-size: 8vw;
+    }
+
+    .Home p {
+        font-size: 2vw;
+    }
+
+    .Home a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.5vw;
+        padding-bottom: 8px;
+        border-bottom: 3px solid transparent;
+    }
+    .Home a:hover {
+        border-color: white;
+    }
+}
+@media all and (max-width: 900px) {
+    .Home {
+        text-align: center;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .Home h1 {
+        font-size: 20vw;
+    }
+
+    .Home p {
+        font-size: 7vw;
+    }
+
+    .Home a {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 5vw;
+        padding-bottom: 8px;
+        border-bottom: 3px solid transparent;
+    }
+    .Home a:hover {
+        border-color: white;
+    }
 }
 
-.Home h1 {
-    font-size: 8em;
+@media all and (min-width: 900px) {
+    .About {
+        padding-top: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .About h1 {
+        font-size: 4vw;
+    }
+
+    .About p {
+        font-size: 1.8vw;
+    }
+
+    .AboutLeft {
+        width:45%;
+    }
+
+    .AboutRight {
+        width:45%;
+    }
+
+    .lang-logo {
+        padding:10px;
+        background-color:rgb(19, 19, 19);
+        max-width: 60px;
+        border-radius:10px ;
+        margin-right: 5px;
+        height:60px;
+        object-fit: contain;
+    }
 }
 
-.Home p {
-    font-size: 2em;
+@media all and (max-width: 900px) {
+    .About {
+        padding-top: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About h1 {
+        font-size: 8vw;
+    }
+
+    .About p {
+        font-size: 4vw;
+    }
+
+    .AboutLeft {
+        margin-bottom: 40px;
+    }
+
+
+    .lang-logo {
+        padding:10px;
+        background-color:rgb(19, 19, 19);
+        max-width: 60px;
+        border-radius:10px ;
+        margin-right: 5px;
+        height:60px;
+        object-fit: contain;
+    }
 }
 
-.Home a {
-    display: inline-block;
-    font-weight: 400;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-.Home a:hover {
-    border-color: white;
-}
+@media all and (min-width: 900px) {
+    .Projects {
+        padding-top: 10%;
+        width: 100%;
+    }
 
-.About {
-    padding-top: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .Projects h1 {
+        font-size: 4vw;
+    }
 
-.About h1 {
-    font-size: 4em;
-}
+    .footer {
+        width:100%;
+        text-align: right;
+        margin-bottom: 40px;
+    }
 
-.About p {
-    font-size: 1.5em;
+    /* Projects */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 3%;
+    }
 }
+@media all and (max-width: 900px) {
+    .Projects {
+        padding-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
 
-.AboutLeft {
-    width:45%;
-}
+    .Projects h1 {
+        font-size: 8vw;
+    }
 
-.AboutRight {
-    width:45%;
-}
+    .footer {
+        width:100%;
+        text-align: right;
+        margin-bottom: 40px;
+    }
 
-.lang-logo {
-    padding:10px;
-    background-color:rgb(19, 19, 19);
-    max-width: 60px;
-    border-radius:10px ;
-    margin-right: 5px;
-    height:60px;
-    object-fit: contain;
-}
-
-.Projects {
-    padding-top: 10%;
-    width: 100%;
-}
-
-.Projects h1 {
-    font-size: 4em;
-}
-
-.Projects a {
-    font-size: 2em;
-}
-
-.footer {
-    width:100%;
-    text-align: right;
-    margin-bottom: 40px;
-}
-
-/* Projects */
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 3%;
+    .project-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 3%;
+    }
 }

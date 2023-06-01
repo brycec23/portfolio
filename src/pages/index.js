@@ -1,6 +1,5 @@
 import * as React from "react";
-import { useRef } from "react";
-import { Link } from "gatsby";
+import { useRef, useState, useEffect } from "react";
 import "../styles/global.css";
 import ProjectCard from "../components/ProjectCard";
 
@@ -133,6 +132,7 @@ export default function Home() {
             sub="iOS app"
             image="/uplift.png"
             desc="A social media app built for the weight lifting community"
+            techUsed="React Native, AWS Amplify, S3, GraphQL"
             git="https://gitlab.cs.vt.edu/brycec23/uplift/"
             link="https://www.kobaltsoftware.org/uplift"
           />
@@ -141,6 +141,7 @@ export default function Home() {
             sub="Website"
             image="/coding.png"
             desc="My web portfolio (this) created from scratch"
+            techUsed="React, Gatsby, Javascript, HTML5, CSS"
             git="https://github.com/brycec23/portfolio"
           />
           <ProjectCard
@@ -148,6 +149,7 @@ export default function Home() {
             sub="iOS app"
             image="/procal.png"
             desc="Find the best calorie per dollar meals at America's favorite restuarants"
+            techUsed="Swift, Python, REST API"
             link="https://www.kobaltsoftware.org/procal"
           />
         </div>
