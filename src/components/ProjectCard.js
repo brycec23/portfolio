@@ -36,7 +36,7 @@ export default function ProjectCard({
             <a href={git} target="_blank">
               <img
                 className="image-link"
-                src="/github.png"
+                src="/github.svg"
                 alt="github"
                 title="View on GitHub"
               />
@@ -46,7 +46,7 @@ export default function ProjectCard({
             <a href={link} target="_blank">
               <img
                 className="image-link"
-                src="/link.png"
+                src="/link.svg"
                 alt="link"
                 title="Product Page"
               />

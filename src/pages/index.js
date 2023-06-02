@@ -19,7 +19,27 @@ export default function Home() {
   return (
     <div className="container">
       <header>
-        <h1>Bryce Cullen</h1>
+        <div className="text-socials">
+          <h1>Bryce Cullen |</h1>
+          <div className="social-links">
+            <a href="https://www.linkedin.com/in/bryce-cullen" target="_blank">
+              <img
+                className="social-icon"
+                src="/linkedin.svg"
+                alt="linkedin"
+                title="LinkedIn"
+              ></img>
+            </a>
+            <a href="/resume.pdf" target="_blank">
+              <img
+                className="social-icon"
+                src="/resume.svg"
+                alt="resume"
+                title="Resume"
+              ></img>
+            </a>
+          </div>
+        </div>
         <div className="links">
           <a onClick={() => scrollToSection(homeRef)}>Home</a>
           <a onClick={() => scrollToSection(aboutRef)}>About Me</a>
