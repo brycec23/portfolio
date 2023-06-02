@@ -159,7 +159,7 @@ export default function Home() {
           <ProjectCard
             name="Portfolio"
             sub="Website"
-            image="/coding.png"
+            image="/bclogo.png"
             desc="My web portfolio (this) created from scratch"
             techUsed="React, Gatsby, Javascript, HTML5, CSS"
             git="https://github.com/brycec23/portfolio"
