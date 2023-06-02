@@ -12,6 +12,10 @@
         border-radius: 10px;
     }
 
+    .project-item:hover {
+        background-color: rgb(30,30,30);
+    }
+
     .project-item p {
         margin: 0;
     }
@@ -64,7 +68,11 @@
     .image-link {
         object-fit:contain;
         height: 35px;
-        padding-left: 10px;
+        margin-left: 10px;
+        padding:5px;
+    }
+    .image-link:hover {
+        opacity: .5;
     }
 }
 @media all and (max-width: 900px) {
@@ -79,6 +87,10 @@
         align-items: center;
         padding: 10px;
         border-radius: 10px;
+    }
+
+    .project-item:hover {
+        background-color: rgb(30,30,30);
     }
 
     .project-item p {
@@ -132,23 +144,10 @@
     .image-link {
         object-fit:contain;
         height: 35px;
-        padding-left: 10px;
+        margin-left: 10px;
+        padding:5px;
+    }
+    .image-link:hover {
+        opacity: .5;
     }
 }
-
-/*
-@media all and (max-width: 900px) {
-    .side_article { 
-        display: none;
-        visibility: hidden;
-    }
-
-    .siteDescription {
-        width: 100%;
-    }
-
-    .main_articles {
-        width: 90%;
-    }
-}
-*/

@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="links">
           <a onClick={() => scrollToSection(homeRef)}>Home</a>
-          <a onClick={() => scrollToSection(aboutRef)}>About Me</a>
+          <a onClick={() => scrollToSection(aboutRef)}>About</a>
           <a onClick={() => scrollToSection(projectsRef)}>Projects</a>
         </div>
       </header>
