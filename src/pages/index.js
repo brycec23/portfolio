@@ -168,6 +168,7 @@ export default function Home() {
             image="/wizard.svg"
             desc="Find engine specifications for any car make and model"
             techUsed="Laravel, PHP, MySQL"
+            git="https://github.com/brycec23/Auto-Wizard"
             link="https://youtu.be/02RX7HuC_yQ"
           />
           <ProjectCard
