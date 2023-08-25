@@ -123,6 +123,13 @@ export default function Home() {
               alt="swift"
               title="Swift"
             />
+            <img
+              className="lang-logo"
+              src="/laravel.png"
+              alt="laravel"
+              title="Laravel"
+            />
+            <img className="lang-logo" src="/php.png" alt="php" title="PHP" />
           </div>
           <div>
             <p>tools</p>
@@ -148,6 +155,22 @@ export default function Home() {
         <h1>Check out some of my projects</h1>
         <div className="project-container">
           <ProjectCard
+            name="ProCal"
+            sub="iOS app"
+            image="/procal.png"
+            desc="Find the best calorie per dollar meals at America's favorite restuarants"
+            techUsed="Swift, Python, REST API"
+            link="https://www.kobaltsoftware.org/procal"
+          />
+          <ProjectCard
+            name="Auto Wizard"
+            sub="Website"
+            image="/wizard.svg"
+            desc="Find engine specifications for any car make and model"
+            techUsed="Laravel, PHP, MySQL"
+            link="https://youtu.be/02RX7HuC_yQ"
+          />
+          <ProjectCard
             name="upLift"
             sub="iOS app"
             image="/uplift.png"
@@ -163,14 +186,6 @@ export default function Home() {
             desc="My web portfolio (this) created from scratch"
             techUsed="React, Gatsby, Javascript, HTML5, CSS"
             git="https://github.com/brycec23/portfolio"
-          />
-          <ProjectCard
-            name="ProCal"
-            sub="iOS app"
-            image="/procal.png"
-            desc="Find the best calorie per dollar meals at America's favorite restuarants"
-            techUsed="Swift, Python, REST API"
-            link="https://www.kobaltsoftware.org/procal"
           />
         </div>
       </div>
