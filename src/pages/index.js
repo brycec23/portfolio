@@ -84,6 +84,7 @@ export default function Home() {
               alt="python"
               title="Python"
             />
+            <img className="lang-logo" src="/php.png" alt="php" title="PHP" />
           </div>
           <div>
             <p>frontend</p>
@@ -129,7 +130,6 @@ export default function Home() {
               alt="laravel"
               title="Laravel"
             />
-            <img className="lang-logo" src="/php.png" alt="php" title="PHP" />
           </div>
           <div>
             <p>tools</p>
