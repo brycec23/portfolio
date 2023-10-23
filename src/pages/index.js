@@ -57,15 +57,11 @@ export default function Home() {
         <div className="AboutLeft">
           <h1>Who I am</h1>
           <p>
-            I graduated with a BS in Computer Science from Virginia Tech in May
-            2023. I enjoy building efficient, impactful, and secure software
-            solutions for modern day problems. When I'm not coding, I enjoy
-            playing volleyball, skiing, and hiking.
+            I enjoy building efficient, impactful, and secure software solutions
+            for modern day problems. When I'm not coding, I enjoy playing
+            volleyball, skiing, and hiking.
           </p>
-          <p>
-            I am looking to join a team of engineers building innovative
-            software.
-          </p>
+          <p>I am currently working as a Software Engineer at Microsoft.</p>
         </div>
         <div className="AboutRight">
           <h1>My Tech Stack</h1>
