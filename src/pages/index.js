@@ -30,14 +30,6 @@ export default function Home() {
                 title="LinkedIn"
               ></img>
             </a>
-            <a href="/resume.pdf" target="_blank">
-              <img
-                className="social-icon"
-                src="/resume.svg"
-                alt="resume"
-                title="Resume"
-              ></img>
-            </a>
           </div>
         </div>
         <div className="links">
